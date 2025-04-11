@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Metabase</title>
+    <style>
+        /* Remove extra margins and padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Navbar placeholder */
+        .navbar {
+            height: 60px; /* Adjust height of your navbar */
+            width: 100%;
+            background-color: #333; /* Example navbar color */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        /* Wrapper for iframe */
+        .iframe-container {
+            width: 85vw;
+            height: calc(100vh - 60px); /* Reduce height to fit below navbar */
+        }
+
+        /* Full-size iframe */
+        iframe {
+            margin-top: 40px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        My Navbar
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="http://localhost:3000/public/dashboard/45b612a6-8f26-48d7-bee0-859180c9f142"></iframe>
+    </div>
+
+</body>
+</html>

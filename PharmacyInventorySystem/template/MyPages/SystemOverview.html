@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Metabase</title>
+    <style>
+        /* Remove extra margins and padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Navbar placeholder */
+        .navbar {
+            height: 60px; /* Adjust height of your navbar */
+            width: 100%;
+            background-color: #333; /* Example navbar color */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        /* Wrapper for iframe */
+        .iframe-container {
+            width: 85vw;
+            height: calc(100vh - 60px); /* Reduce height to fit below navbar */
+        }
+
+        /* Full-size iframe */
+        iframe {
+            margin-top: 40px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        My Navbar
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="http://localhost:3000/public/dashboard/c8952abf-86a8-4781-a332-ec292cfcda7a"></iframe>
+    </div>
+
+</body>
+</html>
+
+
+
+Point & Click Interaction – Click to explore, inspect, and interact with objects.
+✔ Multi-Room Escape Challenge – Progress through increasingly difficult rooms.
+✔ Puzzle-Solving Mechanics – Solve logic puzzles, math riddles, or item-based challenges.
+✔ Inventory System – Collect, combine, and use items to escape.
+✔ Dark, Tense Atmosphere – Adds realism & urgency.
+Text & Voice Dialogues – Enhance narrative depth and engagement.
